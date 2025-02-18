@@ -5,9 +5,9 @@ Actividad 1 de la Unidad 1 de Puesta en Producción Segura. Tabajaremos con los 
 
 Tenemos varios objetivos:
 
-> [Conocer las diferentes listas que tienen que ver con amenazas de seguridad.](##Listas)
+> [Conocer las diferentes listas que tienen que ver con amenazas de seguridad.](#Listas)
 
-> [Obtener información de una vulnerabilidad navegando por las webs de los organismos que mantienen esas listas.](##Trazado)
+> [Obtener información de una vulnerabilidad navegando por las webs de los organismos que mantienen esas listas.](#Trazado)
 
 > [Actividad del trazado de la vulnerabilidad GoAnywhere MFT.](#Trazado-de-la-vulnerabilidad)
 
