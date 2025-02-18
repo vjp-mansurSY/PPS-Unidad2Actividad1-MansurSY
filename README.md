@@ -41,14 +41,15 @@ Como en este artículo no nos dán información sobre el número de la vulnerabi
 
 Dándole al enlace nos lleva a la página: [https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0018](https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0018)
 
-![](images/Screenshot_20250217_181538.png)
+![image](https://github.com/user-attachments/assets/acb7c3cd-9f9f-46d8-8746-16592e78811f)
+
 
 ## Información sobre Vulnerabilidades
 Allí vemos una descripción de los problemas y cómo, son varias las vulnerabilidades detectadas:
 
 Además el desarrollador, nos informa de los productos y versiones afectadas y desde dónde nos podemos descargar los parches de seguridad o software con las vulneravilidades ya corregidas.
 
-![](images/Screenshot_20250217_182724.png)
+![image](https://github.com/user-attachments/assets/e7df15fd-0ac4-4a87-9791-81de5864b481)
 
 Vamos a proceder con el trazado de la primera vulnerabilidad presente, en nuestro caso, la __CVE-2023-29073__.
 
@@ -62,17 +63,17 @@ Para ver información sobre dicha vulnerabilidad podemos acudir al menos a dos f
 
 Desde la [entrada correspondiente a la vulnerabilidad en la NVD](https://nvd.nist.gov/vuln/detail/CVE-2023-29073), lo primero que nos encontramos, es la información de la criticidad que la vulnerabilidad presenta, así como el vector asociado a dicho nivel en la CVSS. En este caso vemos que tiene una valoración de 9.8, y está marcada como __crítica__.
  
-![](images/Screenshot_20250217_183915.png) 
+![image](https://github.com/user-attachments/assets/56c8e5a7-e0f8-48a6-bbdb-87b4fc2fe617)
 
 Si ponemos el cursor sobre el Vector nos aparecerán los valores correspondientes a las diferentes métricas que se han usado para calcularlo.
 
-![](images/Screenshot_20250217_184917.png)
+![image](https://github.com/user-attachments/assets/7db17e57-1b19-410a-a4ba-be0831c9a110)
 
 ## Información sobre las debilidades explotadas.
 
 Otra información importante a obtener son las debilidades que son explotadas. Podemos obtener también esta información tanto en la información de la NVD como en la de CVE.ORG.
 
-![](images/cwe.png)
+![image](https://github.com/user-attachments/assets/c3dadeea-ce64-4395-ae2f-fe847d79f0de)
 
 En esta ocasión podemos ver como son dos las debilidades explotadas por esta vulnerabilidad: CWE-787 y CWE-122. Vamos a ver información sobre ellas.
 
@@ -92,11 +93,12 @@ En esta ocasión podemos ver como son dos las debilidades explotadas por esta vu
 >
 > Más información a obtener... por ejemplo podemos observar como son debilidades presentes en lenguajes como C y C++, por lo que seguramente la aplicación está escrita en alguno de ellos. 
 >
-> ![](images/cwe2.png)
+> ![image](https://github.com/user-attachments/assets/445934c3-e2ed-4cf1-ba7c-30b662942287)
 >
 > También, por último, podemos ver las relaciones entre ésta y otras debilidades, ya que como podemos ver en la imagen ![](images/cwe3.org), esta debilidad ha surgido a partir de la CWE-119 y es padre de la CWE-121 y CWE-122 que es la otra debilidad presente en la vulnerabilidad que estamos estudiando.
 >
-> ![](images/cwe3.png)
+> ![image](https://github.com/user-attachments/assets/bd6a18bd-14ec-4811-91a5-fc7b5572284a)
+
 
 
 - CWE-122
@@ -104,7 +106,8 @@ En esta ocasión podemos ver como son dos las debilidades explotadas por esta vu
 >
 > Si leemos, podemos ver cómo nos encontramos ante la debilidad de desbordamiento de pila y que se considera una variación de la anterior debilidad, por lo que es hijo de ella.
 >
-> También vemos que es una debilidad presente en los lenguajes C y C++ y aquí en está página podemos encontrar la relación de esta debilidad con otro listado el de patrones de ataque. Tal y como vemos en la imagen, ![](images/capec.png) para acometer esta debilidad usamos el patrón de ataque catalogado como CAPEC-92. ![](images/CAPEC.png)
+> También vemos que es una debilidad presente en los lenguajes C y C++ y aquí en está página podemos encontrar la relación de esta debilidad con otro listado el de patrones de ataque. Tal y como vemos en la imagen, ![](images/capec.png) para acometer esta debilidad usamos el patrón de ataque catalogado como CAPEC-92. ![image](https://github.com/user-attachments/assets/6fa691f0-4d81-49f3-a838-73dd510028f2)
+
 
 ## Información sobre patrones de ataque
 
@@ -112,19 +115,20 @@ Podemos acceder a información sobre los patrones de ataque en la lista mantenid
 
 En el caso que nos atañe, hemos llegado a que la vulnerabilidad que estudiamos se puede explotar mediante el [patrón de ataque CAPEC-92. Aquí tenemos enlace a él.](https://capec.mitre.org/data/definitions/92.html)
 
-![](images/CAPEC.png)
+![image](https://github.com/user-attachments/assets/45df8848-8c81-41c4-957e-32b194a88841)
 
 Como nos pasaba en la página cwe.mitre.org, aquí también podemos seleccionar la información a mostrar, dependiendo de nuestras necesidades. En caso de que queramos ver toda la información, selecionamos la vista Complete.
 
 > Por la información suministrada, vemos que el ataque se denomina desbordamiento de enteros y consiste en obligar a una variable, dicho valor suele ser una posición de memoria, y utilizando valores fuera del rango de los valores enteros, se le asigna un valor no admitido para forzar un comportamiento inesperado.
 >
-> ![](images/capec3.png)
+> ![image](https://github.com/user-attachments/assets/328faca0-813f-4e09-a64b-2864076fd59d)
 >
 > Podemos ver cómo se realiza el flujo de ejecución, los requisitos previos, etc. así como las habilidades requeridas para la realización de este patrón de ataque.
 >
 > Por otra parte también vemos las consecuencias respecto a la integridad, confidencialidad, etc., la lista de debilidades que se pueden explotar con este patrón de ataque, así como las posibles mitigaciones que podemos realizar.
 >
->![](images/capec2.png)
+>![image](https://github.com/user-attachments/assets/304c39e5-900f-4d0c-97a0-7ba9d12beb43)
+
 
 ## Descarga del Registro CVE de la vulnerabilidad
 
@@ -135,11 +139,11 @@ Este registro se utiliza para el tratamiento automatizado de la información, pu
 En él está comprendida información en formato xml o JSON sobre CWE, CPE, CAPEC, etc..
 
 Podemos descargarla o acceder a su información, desde la página de cve.org dándole al enlace __View JSON__
-![](images/cveRecord.png)
+![image](https://github.com/user-attachments/assets/d954630f-9a42-4e57-865f-15dd45d9fbc7)
 
 En algunas ocasiones nos podemos encontrar que en él figura información que no aparece en la página de la cve.
 
-> ![](images/cveRecord1.png)
+![image](https://github.com/user-attachments/assets/a184e7fb-4741-4386-a319-f74566a7fcff)
 
 
 ## ENTREGA
