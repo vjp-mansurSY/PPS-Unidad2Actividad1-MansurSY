@@ -149,6 +149,9 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 
 ----
 ## Trazado de la [vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)
+'''
+
+'''
 
 
 ----
