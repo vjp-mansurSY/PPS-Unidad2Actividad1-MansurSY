@@ -149,10 +149,136 @@ En algunas ocasiones nos podemos encontrar que en él figura información que no
 
 ----
 ## Trazado de la [vulnerabilidad](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra)
-'''
 
-'''
+Esta es la vulenrabilidad
 
+![image](/images/C1.png)
+
+Primero en la propia pagina de FORTRA ya tienen clasificada la vulnerabilidad con información básica referenciando el CVE, CWE y CVSS entre otras cosas
+
+![image](/images/C2.png)
+
+Buscamos en la lista de CVE
+
+![image](/images/C3.png)
+
+Y nada mas de entrada ya nos referencia el CWE a la que afecta
+
+![image](/images/C4.png)
+
+También nos muestra la puntuación de impacto, el CVSS y mas referencias 
+
+![image](/images/C5.png)
+
+En NIST buscamos por el cve también
+
+![image](/images/C6.png)
+
+![image](/images/C7.png)
+
+En las métricas volvemos a ver el vector de ataque (CVSS)
+
+![image](/images/C8.png)
+
+Nos muestra más información sobre el vector de ataque
+
+![image](/images/C18.png)
+
+Y nos referencia varias listas CPE
+
+![image](/images/C9.png)
+
+Vemos el CWE al que le afecta esta vulnerabilidad
+
+![image](/images/C10.png)
+
+Aqui tenemos bastante información como patrones de ataque, taxonomia, relaciones etc..
+
+![image](/images/C11.png)
+
+![image](/images/C12.png)
+
+![image](/images/C13.png)
+
+Buscamos en alguno de los CPE que referenciaba en el NIST, vemos información relacionada
+
+![image](/images/C14.png)
+
+Y los metadatos
+
+![image](/images/C15.png)
+
+En CAPEC también buscamos por el cve
+
+![image](/images/C16.png)
+
+Donde nos muestra muchos mecanismos de ataque y patrones de ataque
+
+![image](/images/C17.png)
+
+En la pagina de CVE le damos a la opción que pone "view json" y nos sale esto
+
+![image](/images/C19.png)
+
+En formato json
+```
+{
+  "dataType": "CVE_RECORD",
+  "dataVersion": "5.1",
+  "cveMetadata": {
+    "cveId": "CVE-2024-0204",
+    "assignerOrgId": "df4dee71-de3a-4139-9588-11b62fe6c0ff",
+    "state": "PUBLISHED",
+    "assignerShortName": "Fortra",
+    "dateReserved": "2024-01-03T00:12:28.436Z",
+    "datePublished": "2024-01-22T18:05:13.194Z",
+    "dateUpdated": "2025-02-13T17:27:06.436Z"
+  },
+  "containers": {
+    "cna": {
+      "affected": [
+        {
+          "defaultStatus": "affected",
+          "product": "GoAnywhere MFT",
+          "vendor": "Fortra",
+          "versions": [
+            {
+              "lessThan": "7.4.1",
+              "status": "affected",
+              "version": "6.0.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "descriptions": [
+        {
+          "lang": "en",
+          "value": "Authentication bypass in Fortra's GoAnywhere MFT prior to 7.4.1 allows an unauthorized user to create an admin user via the administration portal."
+        }
+      ],
+      "metrics": [
+        {
+          "cvssV3_1": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 9.8,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          }
+        }
+      ]
+    }
+  }
+}
+```
 
 ----
 ## ENTREGA
